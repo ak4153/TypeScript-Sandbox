@@ -25,3 +25,16 @@ function makeMeReturnString(): string | number {
   let a: string = 'alex';
   return typeof a === 'string' ? returnString(a) : returnString('failsafe');
 }
+
+//assertions
+const myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement;
+
+//literal type combined  into union
+type FlexBox = {
+  justifyContent: 'center' | 'flex-end' | 'flex-start';
+};
+
+function flex(a: FlexBox) {
+  console.log(a.justifyContent);
+}
+flex({ justifyContent: 'center' });
