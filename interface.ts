@@ -29,3 +29,10 @@ function setWidth(width: Options | 'auto') {
 
 setWidth('auto');
 setWidth({ width: 100 });
+
+interface ReturnOnly01 {
+  option: number;
+}
+function return01(option: ReturnOnly01): 1 | 0 {
+  return option.option === 100 ? 1 : 0;
+}
