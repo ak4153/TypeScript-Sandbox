@@ -1,0 +1,24 @@
+{
+    "name": "ts",
+    "version": "1.0.0",
+    "description": "Seems like types add a whole new dimension to debugging your code.\r Learning in progress...",
+    "main": "sandbox.js",
+    "dependencies": {
+        "lite-server": "^2.6.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ak4153/typescript-sandbox.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ak4153/typescript-sandbox/issues"
+    },
+    "homepage": "https://github.com/ak4153/typescript-sandbox#readme"
+}
