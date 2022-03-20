@@ -20,9 +20,7 @@ function createDiv(ob: obj): HTMLDivElement {
   dv.style.alignItems = 'center';
   dv.style.border = '2px solid black';
   code.innerText = ob.role[0];
-
   dv.appendChild(p);
-
   dv.appendChild(code);
   return dv;
 }
@@ -51,4 +49,7 @@ var object: obj = {
   drinks: Drinks.BEER,
 };
 console.log(object.drinks); //2
-document.getElementById('root').appendChild(createDiv(object));
+const htmlDoc: Document = document;
+if (typeof htmlDoc != null) {
+  htmlDoc.getElementById('root')!.appendChild(createDiv(object));
+}

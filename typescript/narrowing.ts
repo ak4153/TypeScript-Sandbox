@@ -47,7 +47,7 @@ function getArea(shape: Shape) {
     case 'square':
       return shape.sideLength ** 2;
     default:
-      const _exhaustiveCheck: never = shape;
+      const _exhaustiveCheck: any = shape;
       return _exhaustiveCheck;
   }
 }

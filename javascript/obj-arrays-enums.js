@@ -1,10 +1,11 @@
+"use strict";
 function createDiv(ob) {
-    var dv = document.createElement('div');
-    var p = document.createElement('p');
-    var code = document.createElement('code');
+    const dv = document.createElement('div');
+    const p = document.createElement('p');
+    const code = document.createElement('code');
     p.innerText = ob.name + 29;
-    var props = ob.properties.map(function (prop) {
-        var prgrph = document.createElement('p');
+    const props = ob.properties.map((prop) => {
+        const prgrph = document.createElement('p');
         prgrph.innerText = prop;
         dv.appendChild(prgrph);
     });
@@ -31,7 +32,10 @@ var object = {
     properties: ['<p>gym</p>', '<p>sleep</p>', '<p>code</p>'],
     nest: { nest2: { nest3: { nest4: 'gold' } } },
     role: ['admin', 1337],
-    drinks: Drinks.BEER
+    drinks: Drinks.BEER,
 };
 console.log(object.drinks); //2
-document.getElementById('root').appendChild(createDiv(object));
+const htmlDoc = document;
+if (typeof htmlDoc != null) {
+    htmlDoc.getElementById('root').appendChild(createDiv(object));
+}
